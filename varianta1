@@ -1,7 +1,7 @@
 #include <iostream>
 int main()
 {
-    int n , b;
+    int a, b;
     std :: cin >> a >> b;
     while(a != b)
         if(a > b)
