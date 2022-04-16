@@ -1,13 +1,13 @@
 #include <iostream>
 int main()
 {
-    int n , m;
-    std :: cin >> n >> m;
-    while(n != m)
-        if(n > m)
-            n -= m;
+    int n , b;
+    std :: cin >> a >> b;
+    while(a != b)
+        if(a > b)
+            a -= b;
         else
-            m -= n;
-    std :: cout << n << std :: endl;
+            a -= b;
+    std :: cout << a << std :: endl;
     return 0;
 }
