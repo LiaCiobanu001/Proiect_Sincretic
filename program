@@ -1,1 +1,26 @@
+#include <iostream> //bibioteca data definește fluxul standart de intrare/ieșire  
+
+using namespace std; // aceasta linie de cod înseamnă că folosim spațiul de nume numit std.
+                    //”std” este o abreviere pentru 
+
+int cmdc(int a, int b) { // definim funcția ”cmdc” = cel mai mare divizor comun
+                        // are doi parametri de tip int  ( numere naturale între -32768...32767 )
+                        // astfel avem a,b => numere natuale
+   
+   if (b == 0) //dacă b= 0 
+   return a; //returnează a
+   else //altfel
+   return cmdc(b, a % b); //returneaza b si modulul dintre a si b
+}
+
+int main() //functia principala
+{
+   int a , b; // definim variabilele a si b de tip int
+   cout<<"Introduceti doua numere de tip int a si b : "<<endl; // compilatorul ne semnaleaza ca trebuie sa citim a si b
+   cin>>a>>b; // citim a si  
+   cout<<"Cel mai mare divizor comun dintre  "<< a <<" si  "<< b <<" este :  "<< cmdc(a, b);        
+   //afisare rezultate
+   return 0; // inchiem functia main 
+}
+
 
